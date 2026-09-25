@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- para el SEO y palabras clave -->
+    <meta name="description" content="Portafolio personal de Carlos Roberto Manriquez Vazquez, estudiante de Ingeniería en TI y líder del proyecto SoL.">
+    <meta name="keywords" content="Desarrollo Web, Portafolio, TSU, Carlos Manriquez, SoL, HTML5, CSS3, Programación">
+    
+    <title>Carlos Manriquez | Portafolio</title>
+    <!-- icono de la pestaña -->
+    <link rel="icon" href="img/LOGO.ico" type="image/x-icon">
+    
+    <!-- mis 3 fuentes de google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+    
+    <!-- libreria para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- enlaza mi archivo de estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Carlos Manriquez</div>
+            <!-- menu de navegacion -->
+            <ul class="enlaces">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#portafolio">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- seccion 1: info sobre mi -->
+    <section id="sobre-mi" class="contenedor-texto">
+        <h1>¡Hola! Soy Carlos Roberto Manriquez Vazquez</h1>
+        <div class="perfil">
+            <!-- mi foto de perfil -->
+            <img src="img/FotoPerfil.jpeg" alt="Foto personal Carlos Manriquez" class="foto-perfil">
+            <div class="info-perfil">
+                <p>Soy Técnico en Programación (CBTis 225, 2022-2025) y actual estudiante de Licenciatura en Ingeniería en TI e Innovación Digital con TSU en Desarrollo de Software Multiplataforma en la UTL. Cuento con una beca interna por promedio.</p>
+                
+                <h3>Habilidades y Aptitudes</h3>
+                <p>Liderazgo, compromiso, responsabilidad y resolución de problemas.</p>
+                
+                <h3>Idiomas</h3>
+                <ul>
+                    <li>Inglés: A2 - B1</li>
+                    <li>Alemán: Cursando (4 meses)</li>
+                </ul>
+
+                <!-- mi audio de presentacion -->
+                <h3>Mi presentación en audio</h3>
+                <audio controls>
+                    <source src="media/ElevenLabs_2026-08-03T05_47_25_Daniela - Energetic Saleswoman_pvc_sp105_s50_sb81_se0_b_m2 (1).mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+        </div>
+
+        <h3>Certificaciones y Cursos</h3>
+        <!-- lista de mis pdfs para descargar -->
+        <ul class="lista-cursos">
+            <li>IA Agéntica y Agentes Inteligentes (Iberotech, Santander Open Academy, Trailhead y Salesforce) - <a href="docs/2814270123CM (1).pdf" target="_blank" download>Descargar PDF</a></li>
+            <li>Mindfulness y Work-Life Balance (Salesforce) - <a href="docs/166_karlinmanvaz@gmail.com (2).pdf" target="_blank" download>Descargar PDF</a></li>
+            <li>Software Architect Mindset Workshop (UTL / Dev Senior Code) - <a href="docs/01KZC9S5EMK5RN32ZWBZG6Z2DG.pdf" target="_blank" download>Descargar PDF</a></li>
+        </ul>
+    </section>
+
+    <!-- seccion 2: mis proyectos -->
+    <section id="portafolio" class="contenedor-texto">
+        <h2>Mi Portafolio</h2>
+        
+        <!-- articulo para el proyecto sol -->
+        <article class="proyecto">
+            <h3>Proyecto: SoL (Servicios de Oficio Local)</h3>
+            <p><strong>Rol:</strong> Líder ágil y administrador.</p>
+            <p>SoL es un prototipo de aplicación web diseñado para cerrar las brechas de acceso digital local, conectando a trabajadores de oficios con clientes de manera sencilla.</p>
+            
+            <div class="recursos-proyecto">
+                <!-- video de sol -->
+                <video width="100%" controls>
+                    <source src="media/03_08_2026_VIDEO-EXPLICATIVO_SOL (1).mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+                <br>
+                <!-- boton para ir a figma en otra pestaña -->
+                <a href="https://www.figma.com/proto/1MUpRZ9DQLkVlEI7ATv2K0/Navgacion_pantalla?node-id=78-62&p=f&t=9HFnwictdDzz2GoY-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=78%3A62&show-proto-sidebar=1" class="boton" target="_blank"><i class="fa-brands fa-figma"></i> Ver prototipo en Figma</a>
+            </div>
+        </article>
+    </section>
+
+    <!-- seccion 3: contacto -->
+    <section id="contacto" class="contenedor-texto">
+        <h2>Contáctame</h2>
+        <p>¿Tienes un proyecto en mente? Escríbeme.</p>
+        
+        <!-- formulario simulado -->
+        <form action="#" method="POST" class="formulario">
+            <!-- cajita para el nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <!-- cajita que valida el correo -->
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- caja grande para el mensaje -->
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <!-- boton que simula enviar -->
+            <button type="submit" class="boton">Enviar Mensaaje</button>
+        </form>
+
+        <!-- Redes Sociales y Contacto -->
+<div class="redes-sociales">
+    <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+    <a href="https://www.linkedin.com/in/v%C3%A1zquez-carlos-549040274/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+</div>
+</section>
+
+    <footer>
+        <p>&copy; 2026 Carlos Roberto Manriquez Vazquez. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
