@@ -1,0 +1,131 @@
+/* --- TIPOGRAFÍAS GLOBALES --- */
+body {
+    /* Aquí aplicamos la fuente Open Sans al texto general */
+    font-family: 'Open Sans', sans-serif; 
+    background-color: #f4f6f9; 
+    color: #333;
+    
+    /* El margin es el espacio "HACIA AFUERA" del elemento. 
+       Al ponerlo en 0, quitamos el margen blanco que los navegadores ponen por defecto. */
+    margin: 0; 
+    padding: 0; 
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #191970; 
+}
+
+/* --- ENCABEZADO Y NAVEGACIÓN --- */
+header {
+    background-color: #191970; 
+    color: white;
+    /* padding: 20px arriba/abajo y 0 a los lados. 
+       Da espacio interno para que el texto no pegue con los bordes. */
+    padding: 20px 0; 
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.enlaces {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.enlaces a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* --- CONTENEDORES DE SECCIONES (El efecto "Cuadro de Texto") --- */
+.contenedor-texto {
+    background-color: #ffffff; /* Fondo blanco para las cajas de contenido */
+    
+    /* margin: 40px arriba/abajo y 'auto' a los lados para centrar el cuadro en la pantalla */
+    margin: 40px auto; 
+    
+    /* padding: 30px de relleno interno para que el texto no toque el borde del cuadro blanco */
+    padding: 30px; 
+    
+    max-width: 800px; /* Ancho máximo para que no se estire demasiado en pantallas grandes */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Una sombrita ligera para que resalte */
+}
+
+/* --- IMÁGENES --- */
+.perfil {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    /* margin-bottom: Empuja los elementos de abajo hacia afuera */
+    margin-bottom: 20px; 
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Adapta la imagen para que no se deforme */
+    border-radius: 50%; /* Hace la imagen circular */
+    border: 3px solid #191970;
+}
+
+/* --- LISTAS Y ENLACES --- */
+.lista-cursos li {
+    /* margin-bottom da espacio entre cada curso de la lista */
+    margin-bottom: 10px; 
+}
+
+a {
+    color: #191970;
+    font-family: 'Roboto Mono', monospace; /* Tercera fuente para enlaces o botones */
+}
+
+/* --- FORMULARIO Y BOTONES --- */
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.formulario input, .formulario textarea {
+    /* padding interno para que al escribir, las letras no toquen el borde de la caja de texto */
+    padding: 10px; 
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.boton {
+    background-color: #191970;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px; /* Empuja el footer hacia abajo, separándolo del contenido de arriba */
+}
